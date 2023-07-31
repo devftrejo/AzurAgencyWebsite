@@ -67,7 +67,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: var(--azurLightBlue);
+  background: var(--azurDarkBlue);
   color: var(--white);
 }
 
@@ -111,7 +111,7 @@ h6 {
 }
 
 #topbar .contact-info i a:hover {
-  color: var(--azurLightBlue);
+  color: var(--azurMediumBlue);
 }
 
 #topbar .social-links a {
@@ -122,7 +122,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: var(--azurLightBlue);
+  color: var(--azurMediumBlue);
 }
 
 /*--------------------------------------------------------------
@@ -344,11 +344,13 @@ h6 {
   display: block;
   position: absolute;
   top: 55px;
-  right: 15px;
+  right: 150px;
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
   background-color: var(--white);
+  border-style: solid;
+  border-color: var(--azurMediumBlue);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -839,38 +841,6 @@ section {
   overflow: hidden;
 }
 
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: var(--shadeOne);
-  margin: 0 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .member .social a:hover {
-  color: var(--azurMediumBlue);
-}
-
-.team .member .social i {
-  font-size: 18px;
-  line-height: 0;
-}
-
 .team .member .member-info {
   padding: 25px 15px;
 }
@@ -886,7 +856,7 @@ section {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: var(--lightgray);
+  color: var(--darkgray);
 }
 
 .team .member .member-info p {
@@ -1213,11 +1183,25 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: var(--azurMediumBlue);
+  background: var(--azurDarkBlue);
   color: var(--white);
   text-decoration: none;
 }
 
 #footer #footer-logo {
   max-width: 70px;
+}
+
+.contact-links {
+  color: var(--azurMediumBlue);
+  text-decoration: none;
+}
+
+.contact-links:hover {
+  color: var(--azurDarkBlue);
+  text-decoration: none;
+}
+
+#footer-copyright {
+  color: var(--azurMediumBlue);
 }
